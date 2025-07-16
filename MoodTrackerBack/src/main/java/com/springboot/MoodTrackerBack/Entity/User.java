@@ -23,12 +23,9 @@ public class User {
     private Gender gender;
     private LocalDate dob;
     private Timestamp created_at;
-    @Transient
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-    private List<Log> logs;
 
     public User(){
-        this.logs = new ArrayList<>();
+
     }
 
     public long getId(){return this.id;}

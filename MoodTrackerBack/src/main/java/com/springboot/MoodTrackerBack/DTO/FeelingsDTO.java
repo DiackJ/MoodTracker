@@ -1,4 +1,4 @@
 package com.springboot.MoodTrackerBack.DTO;
 
-public class LogDTO {
+public class FeelingsDTO {
 }
