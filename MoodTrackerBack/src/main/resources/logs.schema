@@ -1,8 +1,0 @@
-CREATE TABLE logs(
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    user_id INT,
-    week_of DATE,
-    mood INT,
-    sleep_hours DECIMAL,
-    FOREIGN KEY (user_id) REFERENCES user(id)
-);
