@@ -83,3 +83,21 @@ Frontend:
 
 **Screenshot of the Sign-up page:**
 ![Screenshot](https://github.com/user-attachments/assets/96dc1ce1-902a-4d48-b45f-5bddc4d64a3e)
+
+**Screenshot of the User Dashboard:**
+![Screenshot](https://github.com/user-attachments/assets/d8b91e5f-e008-4536-a936-13329ba67eef)
+
+**Screenshot of the Mood Input modal:**
+![Screenshot]()
+
+**Screenshot of the Feelings Input modal:**
+![Screenshot]()
+
+**Screenshot of the Reflection Input modal:**
+![Screenshot]()
+
+**Screenshot of the Sleep Input modal:**
+![Screenshot]()
+
+**Screenshot of the Successful Log Message modal:**
+![Screenshot]()
