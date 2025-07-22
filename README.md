@@ -78,5 +78,8 @@ Frontend:
 
 ## UI preview
 
-**Screenshot of the Login page**
+**Screenshot of the Login page:**
 ![Screenshot](https://github.com/user-attachments/assets/05b064cf-b13c-43e9-b3a7-fd4717b79813)
+
+**Screenshot of the Sign-up page:**
+![Screenshot](https://github.com/user-attachments/assets/96dc1ce1-902a-4d48-b45f-5bddc4d64a3e)
