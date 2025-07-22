@@ -97,7 +97,7 @@ Frontend:
 ![Screenshot](https://github.com/user-attachments/assets/f00054c0-c6fe-400e-b453-72d02fd5dd42)
 
 **Screenshot of the Sleep Input modal:**
-![Screenshot]()
+![Screenshot](https://github.com/user-attachments/assets/219f50a5-5c2e-4b23-98fa-ad45e6f68219)
 
 **Screenshot of the Successful Log Message modal:**
 ![Screenshot]()
