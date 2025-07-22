@@ -66,6 +66,7 @@ Frontend:
 -    Improved my understanding of common Spring Boot annotations and how they work together with Java to create scalable APIs.
 -    Integrated production-ready authentication using **Spring Security** and **JWT tokens** to ensure secure access to protected endpoints.
 -    Got hands-on experience building a frontend UI using React.js and Tailwind CSS.
+-    Implemented some small animations to make the user experience more seamless and enjoyable.
 -    Experience connecting a frontend UI to a backend API on different ports to build a functional full-stack service.
 
 ## Next Steps: 
@@ -77,3 +78,5 @@ Frontend:
 
 ## UI preview
 
+**Screenshot of the Login page**
+![Screenshot](https://github.com/DiackJ/MoodTracker/issues/1#issue-3253515528)
