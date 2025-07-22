@@ -100,4 +100,4 @@ Frontend:
 ![Screenshot](https://github.com/user-attachments/assets/219f50a5-5c2e-4b23-98fa-ad45e6f68219)
 
 **Screenshot of the Successful Log Message modal:**
-![Screenshot]()
+![Screenshot](https://github.com/user-attachments/assets/8e555b45-4ff8-49ea-8bd0-a24817508b20)
