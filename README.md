@@ -79,4 +79,4 @@ Frontend:
 ## UI preview
 
 **Screenshot of the Login page**
-![Screenshot](https://github.com/DiackJ/MoodTracker/issues/1#issue-3253515528)
+![Screenshot](https://github.com/user-attachments/assets/05b064cf-b13c-43e9-b3a7-fd4717b79813)
