@@ -91,7 +91,7 @@ Frontend:
 ![Screenshot](https://github.com/user-attachments/assets/ccd8eac6-068f-4a56-a82a-448f3c598223)
 
 **Screenshot of the Feelings Input modal:**
-![Screenshot]()
+![Screenshot](https://github.com/user-attachments/assets/f3120994-01ee-44c1-ab7a-98301e8a34d6)
 
 **Screenshot of the Reflection Input modal:**
 ![Screenshot]()
