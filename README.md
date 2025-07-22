@@ -75,7 +75,7 @@ Frontend:
 
 **Ideas For Future Features/Additions:**
 
-- Monthly recaps to show the user their mood, sleep and feelings trends for the previous month to give them a broader insight on their wellbeing.
+- Monthly recaps to show the user their mood, sleep and feelings trends from the previous month to give them a broader insight on their wellbeing.
 - A feature that holds the user's daily refelections in a similar style as a notes app so they can go back and see what they logged almost like a digital diary.
 
 ## UI preview
