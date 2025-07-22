@@ -94,7 +94,7 @@ Frontend:
 ![Screenshot](https://github.com/user-attachments/assets/f3120994-01ee-44c1-ab7a-98301e8a34d6)
 
 **Screenshot of the Reflection Input modal:**
-![Screenshot]()
+![Screenshot](https://github.com/user-attachments/assets/f00054c0-c6fe-400e-b453-72d02fd5dd42)
 
 **Screenshot of the Sleep Input modal:**
 ![Screenshot]()
