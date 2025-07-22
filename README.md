@@ -43,10 +43,12 @@ feeling off and can try to better manage their emotional wellbeing which can imp
 
 ## Stack & Features:
 **Tech Stack:**
+
 Backend:
 - Java
 - Spring Boot
 - MySQL
+
 Frontend:
 - React.js
 - Tailwind CSS
