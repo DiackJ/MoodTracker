@@ -57,7 +57,7 @@ Frontend:
 - Secure sign up and login process implemented with Spring Security, JWT, and cookies.
 - MySQL database for scalable and organized data storage.
 - Personalization featured in the UI using the user's name in the greeting header to make it feel more personal.
-- Clean, user-friendly UI featuring a mild color palette and clear components for best user experience.
+- Clean, user-friendly UI featuring a calming color palette and clear components for best user experience.
 - Multi-step, modal form for users to input their data in a clear step-by-step format.
 - Mood and sleep averages so the user can view how they've been feeling and sleeping over the course of 5 logs.
 - Mood and sleep trends graph to show the user the relationship between their mood and sleep in hopes to recognize patterns.
