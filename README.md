@@ -61,7 +61,7 @@ Frontend:
 - Multi-step, modal form for users to input their data in a clear step-by-step format.
 - Mood and sleep averages so the user can view how they've been feeling and sleeping over the course of 5 logs.
 - Mood and sleep trends graph to show the user the relationship between their mood and sleep in hopes to recognize patterns.
-- Scalable and modular backend separating entities, DTOs, services and controller endpoints to allow for future building.
+- Scalable and modular backend: separating entities, DTOs, services and controller endpoints to allow for future building.
 
 ## What I Learned:
 
@@ -79,6 +79,8 @@ Frontend:
 - A feature that holds the user's daily refelections in a similar style as a notes app so they can go back and see what they logged almost like a digital diary.
 
 ## UI preview
+
+**NOTE: at the time of viewing this project, there still may be features in progress!**
 
 **Screenshot of the Login page:**
 ![Screenshot](https://github.com/user-attachments/assets/05b064cf-b13c-43e9-b3a7-fd4717b79813)
