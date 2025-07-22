@@ -1,0 +1,9 @@
+CREATE TABLE daily_logs(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT,
+    entry_date DATE,
+    reflection TEXT,
+    min_sleep INT,
+    max_sleep INT,
+    FOREIGN KEY (user_id) REFERENCES user(id)
+);

@@ -5,6 +5,8 @@ import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.impl.lang.Function;
 import io.jsonwebtoken.security.Keys;
+import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
@@ -71,5 +73,18 @@ public class JwtUtil {
     public Boolean isTokenValid(String token, UserDetails userDetails){
         String username = extractSubject(token);
         return (!isTokenExpired(token) && username.equals(userDetails.getUsername()));
+    }
+
+    //retrieve token from cookie
+    public String extractTokenFromCookie(HttpServletRequest req){
+        Cookie[] cookies = req.getCookies(); //returns all cookies
+        if(cookies != null){
+            for(Cookie cookie : cookies){
+                if("jwt".equals(cookie.getName())){
+                    return cookie.getValue();
+                }
+            }
+        }
+        return null;
     }
 }

@@ -63,6 +63,8 @@ public class JwtAuthFilter extends OncePerRequestFilter {
                 //add the user to the security context holder
                 authToken.setDetails(new WebAuthenticationDetailsSource().buildDetails(req));
                 SecurityContextHolder.getContext().setAuthentication(authToken);
+
+                System.out.println("Auth token: " + authToken);
             }
         }
         chain.doFilter(req,res);
