@@ -106,3 +106,6 @@ Frontend:
 
 **Screenshot of the Successful Log Message modal:**
 ![Screenshot](https://github.com/user-attachments/assets/8e555b45-4ff8-49ea-8bd0-a24817508b20)
+
+**UPDATE: screenshot of the User Dashboard with graph:**
+![Screenshot](https://github.com/user-attachments/assets/7b025d49-4388-4061-9211-9a8a678a67b4)
