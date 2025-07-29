@@ -87,7 +87,7 @@ Frontend:
 ![Screenshot](https://github.com/user-attachments/assets/788b037e-aeb5-4bd8-9209-ebe13f920b1c)
 
 **Screenshot of the Login page with sign in errors:**
-![Screenshot](https://github.com/user-attachments/assets/36b9752a-4668-478c-a6dc-97b8d33a6b5f)
+![Screenshot](https://github.com/user-attachments/assets/36a7f376-2a37-4d06-aa89-74529dc88ee6)
 
 **Screenshot of the Sign-up page:**
 ![Screenshot](https://github.com/user-attachments/assets/96dc1ce1-902a-4d48-b45f-5bddc4d64a3e)
