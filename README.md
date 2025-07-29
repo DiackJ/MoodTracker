@@ -92,6 +92,9 @@ Frontend:
 **Screenshot of the Sign-up page:**
 ![Screenshot](https://github.com/user-attachments/assets/96dc1ce1-902a-4d48-b45f-5bddc4d64a3e)
 
+**Screenshot of the Sign-up page with errors:**
+![Screenshot](https://github.com/user-attachments/assets/81d25ca7-ef66-4a3e-b19c-1366b157fca9)
+
 **Screenshot of the User Dashboard:**
 ![Screenshot](https://github.com/user-attachments/assets/d8b91e5f-e008-4536-a936-13329ba67eef)
 
