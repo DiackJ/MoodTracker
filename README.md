@@ -84,7 +84,7 @@ Frontend:
 **NOTE: at the time of viewing this project, there still may be features in progress!**
 
 **Screenshot of the Login page:**
-![Screenshot](https://github.com/user-attachments/assets/05b064cf-b13c-43e9-b3a7-fd4717b79813)
+![Screenshot](https://github.com/user-attachments/assets/788b037e-aeb5-4bd8-9209-ebe13f920b1c)
 
 **Screenshot of the Login page with sign in errors:**
 ![Screenshot](https://github.com/user-attachments/assets/36b9752a-4668-478c-a6dc-97b8d33a6b5f)
