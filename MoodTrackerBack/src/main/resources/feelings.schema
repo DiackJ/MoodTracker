@@ -1,0 +1,7 @@
+CREATE TABLE feelings(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    daily_log_id INT,
+    entry_date DATE,
+    feeling VARCHAR(50),
+    FOREIGN KEY (daily_log_id) REFERENCES daily_log(id)
+);
