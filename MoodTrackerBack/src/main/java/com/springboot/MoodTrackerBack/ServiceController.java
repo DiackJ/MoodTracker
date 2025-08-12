@@ -1,9 +1,6 @@
 package com.springboot.MoodTrackerBack;
 
-import com.springboot.MoodTrackerBack.DTO.AverageMoodSleepDTO;
-import com.springboot.MoodTrackerBack.DTO.CompositeDTO;
-import com.springboot.MoodTrackerBack.DTO.DailyLogDTO;
-import com.springboot.MoodTrackerBack.DTO.FeelingsDTO;
+import com.springboot.MoodTrackerBack.DTO.*;
 import com.springboot.MoodTrackerBack.Entity.DailyLog;
 import com.springboot.MoodTrackerBack.Entity.Feelings;
 import com.springboot.MoodTrackerBack.Entity.User;
@@ -73,6 +70,15 @@ public class ServiceController {
         long averageSleep = logService.getAverageSleep(user.getId());
 
         AverageMoodSleepDTO dto = new AverageMoodSleepDTO(averageMood, averageSleep);
+
+        return new ResponseEntity<>(dto, HttpStatus.OK);
+    }
+
+    @GetMapping("/mood-sleep")
+    public ResponseEntity<List<MoodSleepDTO>> userMoodAndSleep(HttpServletRequest req){
+        User user = userService.getUserInfo(req);
+
+        List<MoodSleepDTO> dto = logService.getLoggedMoods(user.getId());
 
         return new ResponseEntity<>(dto, HttpStatus.OK);
     }

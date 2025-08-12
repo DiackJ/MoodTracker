@@ -3,6 +3,7 @@ package com.springboot.MoodTrackerBack.Service;
 import com.springboot.MoodTrackerBack.DTO.CompositeDTO;
 import com.springboot.MoodTrackerBack.DTO.DailyLogDTO;
 import com.springboot.MoodTrackerBack.DTO.FeelingsDTO;
+import com.springboot.MoodTrackerBack.DTO.MoodSleepDTO;
 import com.springboot.MoodTrackerBack.Entity.DailyLog;
 import com.springboot.MoodTrackerBack.Entity.Feelings;
 import com.springboot.MoodTrackerBack.Entity.User;
@@ -11,8 +12,11 @@ import com.springboot.MoodTrackerBack.Repository.FeelingsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.ZoneOffset;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.List;
+
 
 @Service
 public class LogService {
@@ -69,8 +73,20 @@ public class LogService {
         if(logs.size() < 5){ //ensures an average will only be returned once the user has at least 5 logs
             return 0;
         }
-        double avgSleep = logs.stream().limit(5).mapToInt(log -> (log.getMinSleep() + log.getMaxSleep() / 2))
+        double avgSleep = logs.stream().limit(5).mapToInt(log -> (log.getMinSleep() + log.getMaxSleep()) / 2)
                 .average().orElse(0);
         return Math.round(avgSleep);
+    }
+
+    public List<MoodSleepDTO> getLoggedMoods(long userId){
+        List<DailyLog> logs = dailyLogsRepository.getOrderedLogs(userId);
+
+        return logs.stream().map(log -> new MoodSleepDTO(
+                log.getMood(),
+                (log.getMinSleep() + log.getMaxSleep()) / 2,
+                log.getEntryDate().toInstant()
+                        .atOffset(ZoneOffset.UTC)
+                        .format(DateTimeFormatter.ofPattern("MMM d")) //format date to only return m/d
+        )).toList();
     }
 }
