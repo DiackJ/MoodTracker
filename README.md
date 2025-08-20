@@ -29,14 +29,9 @@ to care more for their emotional health!
 
 I feel emotional wellbeing is one of the most ignored categories of personal care and development. We trudge through every day telling ourselves "I'm fine. It's fine." Until
 we ultimately reach a breaking point. But what if we didn't have to reach that breaking point before we noticed trends and patterns in our moods and possibly even our sleep?
-When I saw this project on the site FrontendMentor.com I knew I had to try and build it as a fully functional full-stack application! Allowing users to log their daily moods, sleep
-as well as view their trends and patterns could be just what some people need in order to catch up quick and avoid that bitter-sweet mental breakdown. 
-
-For example: a user logs 5 days of moods, sleep and daily reflections. Then, they recieve their averages and can clearly see that perhaps the reason they feel chronically
-sad is because they have a lot of work stress that has been building up and that has been leading them to only be getting approximately 3-4 hours of sleep a night. Which 
-may explain why they feel tired, sluggish, sad, anxious, etc. The user can see this trend and decide to try to do something within their scope of control about it such as setting
-healthier work/life boundaries or deciding that after a certain time of day, they will stop thinking about work and try to relax. Now the user has some insight into why they've been
-feeling off and can try to better manage their emotional wellbeing which can impact other areas of their mental and physical health as well!
+When I saw this project on the site FrontendMentor.com I thought it would be a great project to practice my full-stack development skills and a great challenge as somone who is still 
+learning the front-end. I saw it as a great opportunity to learn while building, forcing me to adapt to new technologies and frameworks and get hand-on experience with how full-stack
+integration works.
 
 ## How To Run:
 
