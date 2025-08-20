@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import InputOverlay from '../reusable/input-overlay';
 
-function LogMoodButton({ handleAverageFetch }){
+function LogMoodButton({ handleAverageFetch, updateGraph }){
      const [clicked, setClicked] = useState(false);
 
      const handleOpen = () => {
@@ -15,7 +15,7 @@ function LogMoodButton({ handleAverageFetch }){
             onClick={handleOpen}>Log today's mood...</button>
             {clicked && (
                 <div>
-                    <InputOverlay visibility={clicked} showForm={handleOpen} handleAverageFetch={handleAverageFetch}/>
+                    <InputOverlay visibility={clicked} showForm={handleOpen} handleAverageFetch={handleAverageFetch} updateGraph={updateGraph} />
                 </div>
             )}
         </div>

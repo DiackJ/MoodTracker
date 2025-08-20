@@ -80,20 +80,61 @@ function Dashboard(){
          .catch(err => console.error("error fetching for graph: ", err));
     },[]); 
 
+    const fetchUpdatedGraph = () => {
+        fetch("http://localhost:8080/mood-sleep",{
+            method: "GET",
+            credentials: "include",
+            headers: {
+                "Content-Type":"application/json"
+            }
+        })
+        .then(res => {
+            if(!res.status === 200){
+                console.error(`http error: ${res.status}`);
+            }
+            console.log("fetched update");
+            return res.json();
+        })
+        .then(list => {
+            setGraphData(list);
+        })
+        .catch(err => console.error("error fetching updated graph: ", err));
+    };
+
+    //note to self: prtty sure this should be a global value persisted with react context to avoid this very thing 
+    const fetchUpdatedUser = () => {
+        fetch("http://localhost:8080/user", {
+            method: "GET",
+            credentials: "include"
+        })
+        .then(res => {
+            if(!res.ok){
+                throw new Error(`HTTP error: ${res.status}`);
+            }
+            return res.json();
+        })
+        .then(data => {
+            setUser(data);
+        })
+        .catch(err => {
+            console.error("Error fetching user",err);
+        })
+    }
+
     
     return (
         <div id="dashboard-container">
             <div id="logo-container" className="flex justify-between">
                 <Logo />
                 <div>
-                    <Profile userName={user?.name} userEmail={user?.email} />
+                    <Profile userName={user?.name} userEmail={user?.email} updateUser={fetchUpdatedUser}/>
                 </div>
             </div>
             <div id="header-container">
                 <Header userName={user?.name}/>
             </div>
             <div>
-                <LogMoodButton handleAverageFetch={getMoodSleepAverages}/>
+                <LogMoodButton handleAverageFetch={getMoodSleepAverages} updateGraph={fetchUpdatedGraph}/>
             </div>
             <div className="flex justify-center">
                 <AverageContainer averageMood={averageMood} averageSleep={averageSleep}/>

@@ -6,7 +6,7 @@ import ProfileOverlay from '../reusable/profile-overlay';
 
 
 
-function ProfilePopup({ userName, userEmail }){
+function ProfilePopup({ userName, userEmail, updateUser }){
   const navigate = useNavigate();
   const [edit, showEdit] = useState(false);
 
@@ -47,7 +47,7 @@ function ProfilePopup({ userName, userEmail }){
           </div>
           <div>
             {edit && (
-              <ProfileOverlay edit={handleEdit}/>
+              <ProfileOverlay edit={handleEdit} updateUser={updateUser}/>
             )}
           </div>
           <p className="border-b-1"></p>

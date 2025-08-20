@@ -13,7 +13,7 @@ import ProgressBar from '../reusable/progress-bar';
 
 //this will hold the form data and useStates for all child modals 
 
-function MainModal({ showForm, handleAverageFetch }){
+function MainModal({ showForm, handleAverageFetch, updateGraph }){
     //mood data handling
     const [moodText, setSelectedMood] = useState(""); //string of selected mood
     const handleSelectedMood = val => {
@@ -124,11 +124,11 @@ function MainModal({ showForm, handleAverageFetch }){
                     </motion.div>
                 </AnimatePresence>
                 <div onClick={handleStep} className='flex justify-center'>
-                    { step < totalSteps - 1 && (<ContinueButton />) }
+                    { step < totalSteps - 1 && (<ContinueButton/>) }
                     { step === totalSteps - 1 && (<SubmitButton onClick={handleSubmit}/>) }
                 </div>
                 <div className="flex justify-center">
-                    { step === totalSteps && (<CloseButton mood={moodText} closeForm={showForm}/>) }
+                    { step === totalSteps && (<CloseButton mood={moodText} closeForm={showForm} updateGraph={updateGraph}/>) }
                 </div>
             </div>
         </div>

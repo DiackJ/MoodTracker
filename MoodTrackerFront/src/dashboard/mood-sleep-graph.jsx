@@ -49,7 +49,7 @@ const mood = data.map(d => moodColors(d.mood));
          {
              data: sleep, //y-axis for sleep
              backgroundColor: mood, //set bg colors based on mood
-             barThickness: 20,
+             barThickness: 10,
         
          },
      ],
@@ -67,7 +67,7 @@ const options ={
              grid:{
                  display: false,
              },
-             offset: false,
+             //offset: false,
          },
          y: {
             beginAtZero: true
@@ -79,7 +79,7 @@ console.log(data);
 
     return(
         <div>
-           <div className="overflow-x-scroll">
+           <div className="">
               <Bar data={chartData} options={options}/>
               
            </div>

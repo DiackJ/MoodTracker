@@ -1,13 +1,13 @@
 import EditProfile from "../dashboard/edit-profile";
-import ExitButton from "./exit-button";
+import ExitEditorButton from "./exit-editor-button";
 
-function ProfileOverlay({ edit }){
+function ProfileOverlay({ edit, updateUser }){
     return(
         <div>
             <div className="fixed inset-0 bg-black opacity-65 min-h-full min-w-full z-1"></div>
             <EditProfile />
             <div className="">
-                <ExitButton closeForm={edit} /> 
+                <ExitEditorButton closeForm={edit} updateUser={updateUser}/> 
             </div>
         </div>
     )

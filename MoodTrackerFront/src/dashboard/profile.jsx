@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import ProfilePopup from './ProfilePopup';
 
-function Profile({ userName, userEmail }){
+function Profile({ userName, userEmail, updateUser }){
     const [profilePopup, setProfilePopup] = useState(false);
 
     const handlePopup = () => {
@@ -14,7 +14,7 @@ function Profile({ userName, userEmail }){
                 <i className="fa-solid fa-circle-user mr-50  mt-10 text-3xl text-indigo-800 hover:cursor-pointer pt-0" onClick={handlePopup}></i>
                 {profilePopup && ( //if popup is true, render whats inside the ( ) 
                     <div>
-                        <ProfilePopup userName={userName} userEmail={userEmail} />
+                        <ProfilePopup userName={userName} userEmail={userEmail} updateUser={updateUser}/>
                     </div>
                 )}
             </div>
