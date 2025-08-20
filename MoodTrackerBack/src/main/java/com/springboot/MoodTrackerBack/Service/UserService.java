@@ -1,6 +1,7 @@
 package com.springboot.MoodTrackerBack.Service;
 
-import com.springboot.MoodTrackerBack.DTO.ProfileUpdateRequest;
+import com.springboot.MoodTrackerBack.DTO.UpdateUserEmail;
+import com.springboot.MoodTrackerBack.DTO.UpdateUserName;
 import com.springboot.MoodTrackerBack.DTO.UserDTO;
 import com.springboot.MoodTrackerBack.ENUM.Gender;
 import com.springboot.MoodTrackerBack.Entity.User;
@@ -8,7 +9,6 @@ import com.springboot.MoodTrackerBack.Repository.UserRepository;
 import com.springboot.MoodTrackerBack.Util.JwtUtil;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -56,25 +56,38 @@ public class UserService {
 
         return user;
     }
-
+//note to self: probably could've avoided separating the profile edit requests
+//into two services/endpoints by doing some frontend logic to keep current
+//name/email if the field was null. -_-
     //edit user profile info
-    public User editUserInfo(HttpServletRequest req, ProfileUpdateRequest dto){
+    public User editUserName(HttpServletRequest req, UpdateUserName dto){
         String token = jwtUtil.extractTokenFromCookie(req);
         String email = jwtUtil.extractSubject(token);
 
         User user =userRepository.findUserByEmail(email).orElseThrow(() -> new UsernameNotFoundException("user not found"));
+
         user.setName(dto.getNewName());
+
+        return userRepository.save(user);
+    }
+
+    public User editUserEmail(HttpServletRequest req, UpdateUserEmail dto){
+        String token = jwtUtil.extractTokenFromCookie(req);
+        String email = jwtUtil.extractSubject(token);
+
+        User user = userRepository.findUserByEmail(email).orElseThrow(() -> new UsernameNotFoundException("user not found"));
+
         user.setEmail(dto.getNewEmail());
 
-        return user;
+        return userRepository.save(user);
     }
 
     //delete account
-    public void deleteAccount(HttpServletRequest req){
-        String token = jwtUtil.extractTokenFromCookie(req);
-        String email = jwtUtil.extractSubject(token);
-        User user = userRepository.findUserByEmail(email).orElseThrow(() -> new UsernameNotFoundException("user not found"));
-
-        userRepository.deleteById(user.getId());
-    }
+//    public void deleteAccount(HttpServletRequest req){
+//        String token = jwtUtil.extractTokenFromCookie(req);
+//        String email = jwtUtil.extractSubject(token);
+//        User user = userRepository.findUserByEmail(email).orElseThrow(() -> new UsernameNotFoundException("user not found"));
+//
+//        userReposi;
+//    }
 }
